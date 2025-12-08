@@ -1,0 +1,133 @@
+/* element selector */
+
+p{
+    color:rgb(84, 147, 25);
+    padding:20px;
+    /* text-align:center; */
+    text-transform:capitalize;                                /* text-transform:uppercase;lowercase;capitalize;*/
+    text-indent:500px;                                /*new*/
+    text-decoration:underline;
+    letter-spacing:2px;                               /*new*/
+    word-spacing:2px;                                            /*new*/
+    line-height:20px;
+    font-family:Arial, Helvetica, sans-serif;                        /* font properties */
+    font-size:20px;
+    font-style:italic;
+    font-weight:bold;
+    text-shadow:3px 4px 5px red;                            /*new*/
+    vertical-align:sub;                                            /*new*/
+}
+
+h1{color:palevioletred;
+ /* text-align:center; */
+text-decoration:underline;                                      /* text-decoration:none;underline;overline;line-through;so-on */
+text-transform:uppercase;
+text-indent:200px;
+}
+
+/* identity selector */
+
+#header{color:blue;
+text-align:center;
+}
+
+
+#para{color:red;
+text-align:center;
+text-shadow:3px 3px 3px yellow;}
+
+/* class selector */
+
+.selector{color:blueviolet;
+text-align:center;
+text-shadow:3px 3px 3px black;}     
+
+.cointainer{
+    color:rgb(84, 147, 25);
+    background-color:rosybrown;
+    text-align:center;
+    text-shadow:1px;
+}
+.highlight{
+    color:blue;
+background-color:pink;
+}
+
+/* ADDING BACKGROUND IMAGE */
+
+/* auto,cover,contain,100px 200px */
+/*  background-repeat:no-repeat; 
+    background-repeat:repeat;
+    background-size:cover; 
+    background-size:100px 200px; */
+
+body{
+    background-image:url("image.jpg");
+    opacity:0.9;
+    background-size:cover;
+}
+
+/* STYLING IN TABLE */
+
+table{border-collapse:collapse;
+border:4px solid black;
+width:auto;}
+
+th{text-align:center;
+border:4px solid black;
+padding:20px;}
+
+td{text-align:left;
+border:4px solid black;
+padding:15px;}
+
+/* ye even row ke color change karega */
+
+tr:nth-child(even){
+    background-color:aqua;
+}
+
+ /* ye odd row ke color change karega */
+tr:nth-child(odd){
+    background-color:aquamarine;
+}
+
+/* curser lane par color change aur koi change aur change bhi laga sakte hai */
+
+tr:hover{
+    background-color:antiquewhite;
+    text-transform: uppercase;
+}
+
+input,button,textarea,select{font-family:'Courier New', Courier, monospace;
+font-size:14px;
+padding:10px;
+margin:5px 0;
+border:1px solid red;
+border-radius:5px ;                                /* rounded corner */
+width:100%;
+box-sizing: border-box;                                                                  /* prevent overflow */
+}
+
+botton:hover{
+    background-color:bisque;
+    color:black;
+    cursor:pointer;
+}
+
+input:focus{
+    border-color:blueviolet;
+}
+
+input:disable{background-color:yellow;}
+
+input:required{
+    border-left:3px solid red;
+}
+ ::placeholder{
+    color:gray;
+    font-style:italic;
+ }
+
+
+ 
